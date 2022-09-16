@@ -59,6 +59,7 @@ body {
 }
 
 .header {
+    position: relative;
     border-top:5px solid var(--accent-color);
     padding-top: 16px;
     padding-bottom: 16px;
@@ -66,6 +67,7 @@ body {
 }
 
 .logo-link{
+    margin-right: 25px;
     transition:  "opacity" 0.4s ease;
 }
 
@@ -86,6 +88,8 @@ body {
 .logo-link img {
     display: block;
 }
+
+
 /* SITENAV */
 .nav {
     display: flex;
@@ -133,8 +137,8 @@ body {
     opacity: 0.6;
 }
 
-/* BUTTON */
 
+/* BUTTON */
 .button {
     display: flex;
     align-items: center;
@@ -159,6 +163,7 @@ body {
 .button:active{
     opacity: 0.6;
 }
+
 
 /* HERO */
 .hero__container {
@@ -228,8 +233,8 @@ body {
     margin-bottom: 32px;
 }
 
-/* FEATURES */
 
+/* FEATURES */
 .features{
     padding-top: 210px;
     padding-bottom: 210px;
@@ -438,4 +443,105 @@ body {
 
 .footer__links a:active{
     opacity: 0.6;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 96%;
+    }
+
+    .menu-btn {
+        position: absolute;
+        background-image: url(../imag/menu.png);
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        right: 0;
+        margin: 0 20px;
+        cursor: pointer;
+        transition: .4s ease;
+    }
+
+    .nav {
+        display: none;
+    }
+
+
+    /* HERO */
+    .hero__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero__img {
+        display: none;
+    }
+
+/* FEATURES */
+    .features {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .features__list {
+        display: block;
+        text-align: center;
+    }
+
+    .feature__item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        margin-top: 40px;
+
+    }
+
+    .features__heading {
+        margin: 0;
+        margin-bottom: 48px;
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .features__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .feature__icon-wrapper {
+        margin-bottom: 15px;
+    }
+
+
+    /* PROMO */
+    .promo__inner {
+        width: 100%;
+        position: sticky;
+        padding: 80px;
+    }
+
+    .promo__content {
+        display: block;
+        text-align: center;
+    }
+
+    .promo__img {
+        display: none;
+    }
+
+
+    /* FOOTER */
+    .footer__links {
+        padding-bottom: 20px;
+    }
+
 }
